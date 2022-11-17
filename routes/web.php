@@ -19,3 +19,7 @@ Route::get('/', function () {
 Route::get('/cadastrar', function () {
     return view('user-registration');
 });
+
+Route::get('/equipamentos', function () {
+    return view('equipments');
+});
