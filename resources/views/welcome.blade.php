@@ -24,7 +24,7 @@
             <h1>Página Inicial do Projeto</h1>
             <img src="/img/laravel_logo.png" alt="Laravel Logo">
         </main>
-        <footer>
+        <footer class="text-center mt-5">
             <p>App-Laravel &copy;2022</p>
         </footer>
        
