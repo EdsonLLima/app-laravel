@@ -17,8 +17,25 @@
 
     </head>
     <body>
-        <header>
-            Menu
+        <header class="container">
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="collapse navbar-collapse" id="navbar">
+              <a href="/" class="navbar-brand">
+              <img src="/img/laravel_logo.png" alt="HDC Events">
+            </a>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a href="/" class="nav-link">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a href="/cadastrar" class="nav-link">Cadastrar</a>
+              </li>
+              <li class="nav-item">
+                <a href="/equipamentos" class="nav-link">Equipamentos</a>
+              </li>
+            </ul>
+            </div>
+          </nav>
         </header>
 
         @yield('content')        
