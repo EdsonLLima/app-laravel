@@ -13,13 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-Route::get('/cadastrar', function () {
-    return view('user-registration');
-});
+use App\Http\Controllers\AppController;
+use Illuminate\Support\Facades\App;
 
-Route::get('/equipamentos', function () {
-    return view('equipments');
-});
+Route::get('/', [AppController::class, 'index']);
+
+Route::get('/cadastrar', [AppController::class, 'register']);
+
+Route::get('/equipamentos', [AppController::class, 'equipments']);
